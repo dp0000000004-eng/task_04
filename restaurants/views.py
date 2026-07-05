@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
 def welcome(request):
-    return render(request, 'index.html', {'msg':'Hello World!'})
+    msg = "Hello, World!
+    return render(request, 'index.html', {"msg":msg})
 
 def restaurant_list(request):
     context = {
